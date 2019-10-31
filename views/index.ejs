@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= title %></title>
+  <%- css %>
+</head>
+
+<body>
+  <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p>
+  <p>
+    <% locals.arr.forEach(element => { %>
+    <h2>這是陣列</h2>
+    <p><%= element %></p>
+    <%});%>
+  </p>
+  <p>
+    <% for (const key in locals.arrz) {
+      if (locals.arrz.hasOwnProperty(key)) {
+        const element = locals.arrz[key];%>
+        <h2>這是物件</h2>
+        <p><%= element%></p>
+    <%}
+    }%>
+  </p>
+</body>
+
+</html>
