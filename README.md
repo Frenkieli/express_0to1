@@ -201,6 +201,12 @@ https://ithelp.ithome.com.tw/articles/10196477
 
 利用bcrypt來進行加密傳送與回傳，後台存的密碼也是加密過的
 
+#### 安裝 http-status
+
+用來處理200 ,300 , 404之類的回傳訊息
+
+yarn add http-status
+
 參考這個跑一次
 
 express
