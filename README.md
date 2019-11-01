@@ -203,9 +203,29 @@ https://ithelp.ithome.com.tw/articles/10196477
 
 #### 安裝 http-status
 
-用來處理200 ,300 , 404之類的回傳訊息
+用來處理客製化200 ,300 , 404之類的回傳訊息
 
 yarn add http-status
+
+#### 安裝 yarn add jsonwebtoken
+
+用來處理身分加密問題會產生一組token給訪客使用
+
+>建立一個函式並命名 ensureToken，它是一個我們自定義的 Middleware，你也可以使用 Node.js 的 Passport 組件來完成身份驗證
+
+未來應該要使用Passport來做
+
+https://ithelp.ithome.com.tw/articles/10196967
+
+Bearer 是前贅詞
+
+https://ithelp.ithome.com.tw/articles/10197166
+
+記得回來完成API錯誤時要客製化回傳的資訊
+
+參照 https://ithelp.ithome.com.tw/articles/10196735
+
+
 
 參考這個跑一次
 
