@@ -41,7 +41,7 @@ const articleDelete = (req, res) => {
 const articlePersonalGet = (req, res) => {
   articleModule.selectPersonalArticle(req.token).then((result) => {
     res.send(result); // 成功回傳result結果
-  }).catch((err) => { return res.status(401).send(err); }); // 失敗回傳錯誤訊息
+  }).catch((error) => { return res.status(401).send(error); }); // 失敗回傳錯誤訊息
 };
 
 

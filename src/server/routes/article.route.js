@@ -2,6 +2,7 @@
 import express from 'express';
 import validate from 'express-validation';
 import articleCtrl from '../controllers/article.controller';
+import supertest from '../../../test/article.test';
 import paramValidation from '../../config/param-validation';
 
 const router = express.Router();
@@ -35,5 +36,7 @@ router.route('/:article_id')
 
   /** 取得某用戶 Article 所有值組 */
 router.get('/personal', ensureToken, articleCtrl.articlePersonalGet);
+
+router.get('/supertest',supertest);
 
 export default router;

@@ -207,7 +207,7 @@ https://ithelp.ithome.com.tw/articles/10196477
 
 yarn add http-status
 
-#### 安裝 yarn add jsonwebtoken
+#### 安裝 yarn add jsonwebtoken //從這裡開始失敗
 
 用來處理身分加密問題會產生一組token給訪客使用
 
@@ -225,7 +225,11 @@ https://ithelp.ithome.com.tw/articles/10197166
 
 參照 https://ithelp.ithome.com.tw/articles/10196735
 
+#### 斷言庫 單元測試
 
+yarn add -D mocha
+
+yarn add -D chai
 
 參考這個跑一次
 
@@ -233,6 +237,10 @@ express
 
 先這個
 https://ithelp.ithome.com.tw/articles/10191816
+
+這個day36之後是學習google雲端上線用的
+
+#### 接著下面
 
 https://ithelp.ithome.com.tw/articles/10157288
 
